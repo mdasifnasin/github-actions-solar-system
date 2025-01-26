@@ -70,4 +70,6 @@ jobs:
           with:
              method: kubeconfig
              kubeconfig: ${{secrets.KUBECONFIG}}
+        - name: Run
+          run: kubectl version --short -o yaml
       
